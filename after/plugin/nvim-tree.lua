@@ -11,6 +11,7 @@ end
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
 nvim_tree.setup {
+  sort_by = 'extension',
   update_focused_file = {
     enable = true,
     update_cwd = true,

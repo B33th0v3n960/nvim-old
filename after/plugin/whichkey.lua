@@ -149,6 +149,7 @@ local mappings = {
 		b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
 		c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
 		h = { "<cmd>Telescope help_tags<cr>", "Find Help" },
+		H = { "<cmd>Telescope find_files hidden=true<cr>", "Search Hidden Files" },
 		M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
 		r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
 		R = { "<cmd>Telescope registers<cr>", "Registers" },
@@ -175,7 +176,7 @@ local mappings = {
 	z = {
 		name = "Zen",
 		t = { "<cmd>TZAtaraxis<cr>", "Toggle" },
-    m = {"<cmd>TZMinimal<cr>", "Minimal"}
+		m = { "<cmd>TZMinimal<cr>", "Minimal" },
 	},
 }
 
