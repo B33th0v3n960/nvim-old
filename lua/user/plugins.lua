@@ -85,11 +85,11 @@ return packer.startup(function(use)
 	use("nvim-telescope/telescope.nvim")
 
 	-- Treesitter
-	-- use("nvim-treesitter/nvim-treesitter")
-	use({
-		"nvim-treesitter/nvim-treesitter",
-		commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
-	})
+	use("nvim-treesitter/nvim-treesitter")
+	-- use({
+	-- 	"nvim-treesitter/nvim-treesitter",
+	-- 	commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
+	-- })
 
 	-- Git
 	use("lewis6991/gitsigns.nvim")
@@ -102,6 +102,23 @@ return packer.startup(function(use)
 			vim.fn["mkdp#util#install"]()
 		end,
 	})
+
+	use({
+		"folke/noice.nvim",
+		requires = {
+			"MunifTanjim/nui.nvim",
+			"rcarriga/nvim-notify",
+		},
+	})
+
+
+  use({"ggandor/leap.nvim", 
+    require = {
+      "tpope/vim-repeat"
+    }
+  })
+
+  use('lervag/vimtex')
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
