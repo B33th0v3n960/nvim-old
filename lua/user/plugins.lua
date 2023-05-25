@@ -86,23 +86,20 @@ return packer.startup(function(use)
 
 	-- Treesitter
 	use("nvim-treesitter/nvim-treesitter")
-	-- use({
-	-- 	"nvim-treesitter/nvim-treesitter",
-	-- 	commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
-	-- })
 
 	-- Git
 	use("lewis6991/gitsigns.nvim")
 
+	use({ "ggandor/leap.nvim", require = { "tpope/vim-repeat" } })
 	use("Pocco81/true-zen.nvim")
 	use("mbbill/undotree")
+	use("lervag/vimtex")
 	use({
 		"iamcco/markdown-preview.nvim",
 		run = function()
 			vim.fn["mkdp#util#install"]()
 		end,
 	})
-
 	use({
 		"folke/noice.nvim",
 		requires = {
@@ -110,16 +107,6 @@ return packer.startup(function(use)
 			"rcarriga/nvim-notify",
 		},
 	})
-
-
-  use({"ggandor/leap.nvim", 
-    require = {
-      "tpope/vim-repeat"
-    }
-  })
-
-  use('lervag/vimtex')
-
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
