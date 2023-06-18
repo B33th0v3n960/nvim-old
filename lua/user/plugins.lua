@@ -74,9 +74,9 @@ return packer.startup(function(use)
 	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
 
 	-- LSP
-	use({ "neovim/nvim-lspconfig", commit = "f11fdff7e8b5b415e5ef1837bdcdd37ea6764dda" }) -- enable LSP
+	use({ "neovim/nvim-lspconfig" }) -- enable LSP
 	use("williamboman/mason.nvim") -- simple to use language server installer
-	use({ "williamboman/mason-lspconfig.nvim", commit = "0051870dd728f4988110a1b2d47f4a4510213e31" })
+	use({ "williamboman/mason-lspconfig.nvim" })
 	use("williamboman/mason-lspconfig.nvim")
 	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
 	use("RRethy/vim-illuminate")
@@ -107,6 +107,8 @@ return packer.startup(function(use)
 			"rcarriga/nvim-notify",
 		},
 	})
+
+	use("nvim-pack/nvim-spectre")
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then

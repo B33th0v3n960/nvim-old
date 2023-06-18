@@ -1,5 +1,6 @@
 local servers = {
-	"sumneko_lua",
+	-- "sumneko-lua",
+	"lua_ls",
 	"cssls",
 	"html",
 	"tsserver",
@@ -8,6 +9,7 @@ local servers = {
 	"jsonls",
 	"yamlls",
 	"emmet_ls",
+	"rust_analyzer",
 }
 
 local settings = {
