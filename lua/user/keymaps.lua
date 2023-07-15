@@ -20,6 +20,17 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Better window navigation
+keymap("n", "1", "<cmd>BufferLineGoToBuffer 1<cr>", opts)
+keymap("n", "2", "<cmd>BufferLineGoToBuffer 2<cr>", opts)
+keymap("n", "3", "<cmd>BufferLineGoToBuffer 3<cr>", opts)
+keymap("n", "4", "<cmd>BufferLineGoToBuffer 4<cr>", opts)
+keymap("n", "5", "<cmd>BufferLineGoToBuffer 5<cr>", opts)
+keymap("n", "6", "<cmd>BufferLineGoToBuffer 6<cr>", opts)
+keymap("n", "7", "<cmd>BufferLineGoToBuffer 7<cr>", opts)
+keymap("n", "8", "<cmd>BufferLineGoToBuffer 8<cr>", opts)
+keymap("n", "9", "<cmd>BufferLineGoToBuffer 9<cr>", opts)
+keymap("n", "0", "<cmd>BufferLineGoToBuffer -1<cr>", opts)
+
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
